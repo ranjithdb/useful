@@ -45,4 +45,39 @@ tree
 
 #### tree vs tree -a
 ![ss of tree vs tree -a](ss/003.png)
+---
+### show first ten lines of a file
+```
+head
+```
+### show first n number of lines of a file
+```
+head -n5 filename
+```
+### show last ten lines of a file
+```
+tail
+```
+### show last n number of lines of a file
+```
+tail -n5 filename
+```
+### search for a file
+```
+find /path/to/ -name filename
+```
+### search for a file and remove errors
+```
+find /path/to/ -name filename 2>/dev/null
+```
+### search for all the `.sh` files in home directory
+```
+find ~ -name *.sh 2>/dev/null
+```
+### search for files with gitig in its name
+```
+find ~ -name *gitig* 2>/dev/null
+```
+#### find /path/to *gitig* 2>/dev/null
+![ss of find /path/to *gitig* 2>/dev/null](ss/004.png)
 
