@@ -44,3 +44,21 @@ docker exec -it nginx sh
 docker exec -it nginx bash
 docker exec -it 7d6cd739b951 /bin/bash
 ```
+
+### access docker container logs
+
+```
+docker logs <conatiner-name>
+```
+
+follow logs
+
+```
+docker logs -f <container-name>
+```
+
+follow last 10 lines
+
+```
+docker logs -f --tails 10 <container-name>
+```
